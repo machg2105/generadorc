@@ -1,1 +1,35 @@
-<!DOCTYPE html><br/><html lang="es"><br/><head><br/>  <meta charset="UTF-8"><br/>  <meta name="viewport" content="width=device-width, initial-scale=1.0"><br/>  <title>Generador de Contraseñas</title><br/>  <link rel="stylesheet" href="styles.css"><br/></head><br/><body><br/>  <header><br/>    <h1>Generador de Contraseñas</h1><br/>  </header><br/>  <main><br/>    <section id="opciones"><br/>      <label for="longitud">Longitud de la Contraseña:</label><br/>      <input type="number" id="longitud" min="8" max="16" value="12"><br/>      <label for="mayusculas">Incluir Mayúsculas:</label><br/>      <input type="checkbox" id="mayusculas" checked><br/>      <label for="minusculas">Incluir Minúsculas:</label><br/>      <input type="checkbox" id="minusculas" checked><br/>      <label for="numeros">Incluir Números:</label><br/>      <input type="checkbox" id="numeros" checked><br/>      <label for="simbolos">Incluir Símbolos:</label><br/>      <input type="checkbox" id="simbolos"><br/>      <button id="generar-contraseña">Generar Contraseña</button><br/>      <button id="copiar-contraseña" disabled>Copiar al Portapapeles</button><br/>    </section><br/>    <section id="contraseña-generada"><br/>      <h2>Contraseña Generada:</h2><br/>      <input type="text" id="contraseña" readonly><br/>    </section><br/>  </main><br/>  <script src="app.js"></script><br/></body><br/></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Generador de Contraseñas</h1>
+  </header>
+  <main>
+    <section id="opciones">
+      <label for="longitud">Longitud de la Contraseña:</label>
+      <input type="number" id="longitud" min="8" max="16" value="12">
+      <label for="mayusculas">Incluir Mayúsculas:</label>
+      <input type="checkbox" id="mayusculas" checked>
+      <label for="minusculas">Incluir Minúsculas:</label>
+      <input type="checkbox" id="minusculas" checked>
+      <label for="numeros">Incluir Números:</label>
+      <input type="checkbox" id="numeros" checked>
+      <label for="simbolos">Incluir Símbolos:</label>
+      <input type="checkbox" id="simbolos">
+      <button id="generar-contraseña">Generar Contraseña</button>
+      <button id="copiar-contraseña" disabled>Copiar al Portapapeles</button>
+    </section>
+    <section id="contraseña-generada">
+      <h2>Contraseña Generada:</h2>
+      <input type="text" id="contraseña" readonly>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
