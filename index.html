@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generador de Contraseñas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Note App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Generador de Contraseñas</h1>
-  </header>
-  <main>
-    <section id="opciones">
-      <label for="longitud">Longitud de la Contraseña:</label>
-      <input type="number" id="longitud" min="8" max="16" value="12">
-      <label for="mayusculas">Incluir Mayúsculas:</label>
-      <input type="checkbox" id="mayusculas" checked>
-      <label for="minusculas">Incluir Minúsculas:</label>
-      <input type="checkbox" id="minusculas" checked>
-      <label for="numeros">Incluir Números:</label>
-      <input type="checkbox" id="numeros" checked>
-      <label for="simbolos">Incluir Símbolos:</label>
-      <input type="checkbox" id="simbolos">
-      <button id="generar-contraseña">Generar Contraseña</button>
-      <button id="copiar-contraseña" disabled>Copiar al Portapapeles</button>
-    </section>
-    <section id="contraseña-generada">
-      <h2>Contraseña Generada:</h2>
-      <input type="text" id="contraseña" readonly>
-    </section>
-  </main>
-  <script src="app.js"></script>
+    <div class="container">
+        <h1>Secure Note App</h1>
+        <textarea id="note" placeholder="Escribe tu nota aquí"></textarea>
+        <input type="datetime-local" id="expiryDateTime">
+        <button onclick="saveNote()">Guardar Nota</button>
+        <button onclick="checkExpiry()">Verificar Expiración</button>
+        <button onclick="editNote()">Editar Nota</button>
+        <button onclick="deleteNote()">Eliminar Nota</button>
+        <div id="noteDisplay"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
